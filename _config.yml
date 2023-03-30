@@ -25,7 +25,7 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: vsathyapriyan
-linkedin_username:  vasudhasathya
+linkedin_username:  vasudha-sathya
 googlescholar_username: Vasudha Sathyapriyan
 orcid_username: 0000-0002-7454-3222
 
