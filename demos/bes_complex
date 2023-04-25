@@ -30,7 +30,7 @@ permalink: /bes_complex/
 <body>
 <header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="https://vikastokala.github.io">Vasudha Sathyapriyan</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="https://vsathyapriyan.github.io">Vasudha Sathyapriyan</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger">
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -55,11 +55,11 @@ permalink: /bes_complex/
 <div class="post-content">
 <!-- ... -->
 
-<h2> Binaural Speech Enhancement using Deep Complex Transformer Networks</h2>
+<h2> Speech enhacnement using binary estimator selection applied to hearing aids with a remote microphone</h2>
 
-<p> The demos consist of Binaural signals and headphones are recommended for listening.
+<p> The demos consist of monoaural left signals for different noise and SNRs, headphones are recommended for listening.
   <ul>
-    <li> The binaural signals are generated using measured HRIRs from the Kayser Database [3] </li>
+    <li> The monaural left signals are generated using measured HRIRs from the Kayser Database [3] </li>
     <li> The speech signals are taken from the VCTK Corpus [2] </li>
     
   </ul>
@@ -70,7 +70,6 @@ permalink: /bes_complex/
 <!-- <h1> Anechoic recordings </h1> -->
 <div class="tab" style="min-width: 600px">
   <button class="tablinks active" onclick="openTab(event, 'White')">White</button>
-  <button class="tablinks" onclick="openTab(event, 'Babble')">Babble</button>
   <button class="tablinks" onclick="openTab(event, 'Speech-shaped noise')">Speech-shaped noise</button>
 </div>
 
