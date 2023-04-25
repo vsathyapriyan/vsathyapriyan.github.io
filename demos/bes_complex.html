@@ -69,14 +69,14 @@ permalink: /bes_complex/
 <h3> Isotropic Speech Shaped Noise </h3>
 <!-- <h1> Anechoic recordings </h1> -->
 <div class="tab" style="min-width: 600px">
-   <button class="tablinks onclick" onclick="openTab(event, 'neg10dB')">-10 dB</button>
+   <button class="tablinks" onclick="openTab(event, 'neg10dB')">-10 dB</button>
   <button class="tablinks" onclick="openTab(event, 'neg5dB')">-5 dB</button>
   <button class="tablinks active" onclick="openTab(event, '0dB')">0 dB</button>
   <button class="tablinks" onclick="openTab(event, '5dB')">5 dB</button>
   <button class="tablinks" onclick="openTab(event, '10dB')">10 dB</button>
 </div>
   
-<div id="neg10dB" class="tabcontent" style="display:block">
+<div id="neg10dB" class="tabcontent" style="display:none">
   <div class="player">
   <p>
       Hearing aids are at an SNR = -10 dB.
@@ -94,7 +94,7 @@ permalink: /bes_complex/
 </div>
 </div>
   
-  <div id="neg5dB" class="tabcontent" style="display:block">
+  <div id="neg5dB" class="tabcontent" style="display:none">
   <div class="player">
   <p>
       Hearing aids are at an SNR = -5 dB.
@@ -163,7 +163,7 @@ permalink: /bes_complex/
 </div>
 </div>
   
-  <div id="10dB" class="tabcontent" style="display:block">
+  <div id="10dB" class="tabcontent" style="display:none">
   <div class="player">
   <p>
       Hearing aids are at an SNR = 10 dB.
@@ -185,14 +185,14 @@ permalink: /bes_complex/
 
 <h1>Isotropic White Gaussian Noise </h1>
 <div class="tab" style="min-width: 600px">
-  <button class="tablinks2 active" onclick="openTab2(event, 'neg10dB_WGN')">-10 dB</button>
+  <button class="tablinks2" onclick="openTab2(event, 'neg10dB_WGN')">-10 dB</button>
   <button class="tablinks2" onclick="openTab2(event, 'neg5dB_WGN')">-5 dB</button>
-  <button class="tablinks2" onclick="openTab2(event, '0dB_WGN')">0 dB</button>
-   <button class="tablinks2 active" onclick="openTab2(event, '5dB_WGN')">5 dB</button>
+  <button class="tablinks2 active" onclick="openTab2(event, '0dB_WGN')">0 dB</button>
+   <button class="tablinks2" onclick="openTab2(event, '5dB_WGN')">5 dB</button>
   <button class="tablinks2" onclick="openTab2(event, '10dB_WGN')">10 dB</button>
 </div>
 
-<div id="neg10dB_WGN" class="tabcontent2" style="display:block">
+<div id="neg10dB_WGN" class="tabcontent2" style="display:none">
   <div class="player">
   <p>
       Hearing aids are at an SNR = -10 dB.
@@ -224,7 +224,7 @@ permalink: /bes_complex/
   </ts-track>
 </div>
 </div>
-  <div id="neg5dB_WGN" class="tabcontent2" style="display:block">
+  <div id="neg5dB_WGN" class="tabcontent2" style="display:none">
   <div class="player">
   <p>
       Hearing aids are at an SNR = -5 dB.
@@ -258,7 +258,7 @@ permalink: /bes_complex/
 </div>
 
 
-<div id="0dB_WGN" class="tabcontent2" style="display:none">
+<div id="0dB_WGN" class="tabcontent2" style="display:block">
   <div class="player">
   <p>
       Hearing aids are at an SNR = 0 dB.
@@ -291,7 +291,7 @@ permalink: /bes_complex/
 </div>
 </div>
   
-  <div id="5dB_WGN" class="tabcontent2" style="display:block">
+  <div id="5dB_WGN" class="tabcontent2" style="display:none">
   <div class="player">
   <p>
       Hearing aids are at an SNR = 5 dB.
@@ -325,7 +325,7 @@ permalink: /bes_complex/
 </div>
 
 
-<div id="10dB_WGN" class="tabcontent2" style="display:block">
+<div id="10dB_WGN" class="tabcontent2" style="display:none">
   <div class="player">
   <p>
       Hearing aids are at an SNR = 10 dB.
