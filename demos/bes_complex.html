@@ -66,17 +66,17 @@ permalink: /bes_complex/
 
 <p> This page was generated using <b> trackswitch.js </b> in [1].
 
-<h3> Isotropic Noise </h3>
+<h3> Isotropic Speech Shaped Noise </h3>
 <!-- <h1> Anechoic recordings </h1> -->
 <div class="tab" style="min-width: 600px">
-  <button class="tablinks active" onclick="openTab(event, 'White')">White</button>
-  <button class="tablinks" onclick="openTab(event, 'Speech-shaped noise')">Speech-shaped noise</button>
+  <button class="tablinks active" onclick="openTab(event, '0dB')">0 dB</button>
+  <button class="tablinks" onclick="openTab(event, '5dB')">5 dB</button>
 </div>
 
-<div id="White" class="tabcontent" style="display:block">
+<div id="0dB" class="tabcontent" style="display:block">
   <div class="player">
   <p>
-      Diffuse white Gaussian noise.
+      Hearing aids are at an SNR = 0 dB.
   </p>
   <!-- <img src="mix.png" class="seekable"> -->
   <ts-track title="Noisy">
@@ -91,43 +91,10 @@ permalink: /bes_complex/
 </div>
 </div>
 
-<div id="Babble" class="tabcontent" style="display:none">
+<div id="5dB" class="tabcontent" style="display:none">
   <div class="player">
   <p>
-      Diffuse babble noise at 0 dB SNR.
-  </p>
-  <!-- <img src="mix.png" class="seekable"> -->
-  <ts-track title="Raw (best)">
-      <ts-source src="../assets/se_PEVD_da/audio/babble_0_raw_best.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="Raw (worst)">
-      <ts-source src="../assets/se_PEVD_da/audio/babble_0_raw_worst.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="DSB (best)">
-      <ts-source src="../assets/se_PEVD_da/audio/babble_0_dsb_best.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="DSB (worst)" style="overflow: hidden">
-      <ts-source src="../assets/se_PEVD_da/audio/babble_0_dsb_worst.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="MVDR (best)">
-      <ts-source src="../assets/se_PEVD_da/audio/babble_0_mvdr_best.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="MVDR (worst)">
-      <ts-source src="../assets/se_PEVD_da/audio/babble_0_mvdr_worst.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="PEVD full">
-      <ts-source src="../assets/se_PEVD_da/audio/babble_0_pevd_full.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="PEVD proposed">
-      <ts-source src="../assets/se_PEVD_da/audio/babble_0_pevd.wav" type="audio/wav"></ts-source>
-  </ts-track>
-</div>
-</div>
-
-<div id="Speech-shaped noise" class="tabcontent" style="display:none">
-  <div class="player">
-  <p>
-      Diffuse speech-shaped noise at 0 dB SNR.
+      Hearing aids are at an SNR = 5 dB.
   </p>
   <!-- <img src="mix.png" class="seekable"> -->
   <ts-track title="Raw (best)">
