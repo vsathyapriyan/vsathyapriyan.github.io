@@ -69,10 +69,48 @@ permalink: /bes_complex/
 <h3> Isotropic Speech Shaped Noise </h3>
 <!-- <h1> Anechoic recordings </h1> -->
 <div class="tab" style="min-width: 600px">
+   <button class="tablinks active" onclick="openTab(event, 'neg10B')">-10 dB</button>
+  <button class="tablinks" onclick="openTab(event, 'neg5dB')">-5 dB</button>
   <button class="tablinks active" onclick="openTab(event, '0dB')">0 dB</button>
   <button class="tablinks" onclick="openTab(event, '5dB')">5 dB</button>
+  <button class="tablinks" onclick="openTab(event, '10dB')">10 dB</button>
 </div>
-
+<div id="neg10dB" class="tabcontent" style="display:block">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = -10 dB.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+  <ts-track title="Noisy">
+      <ts-source src="../assets/bse_dcctn/WGN_N_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Enhanced">
+      <ts-source src="../assets/bse_dcctn/WGN_E_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Clean">
+      <ts-source src="../assets/bse_dcctn/WGN_C_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  
+  <div id="neg5dB" class="tabcontent" style="display:block">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = -5 dB.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+  <ts-track title="Noisy">
+      <ts-source src="../assets/bse_dcctn/WGN_N_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Enhanced">
+      <ts-source src="../assets/bse_dcctn/WGN_E_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Clean">
+      <ts-source src="../assets/bse_dcctn/WGN_C_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  
 <div id="0dB" class="tabcontent" style="display:block">
   <div class="player">
   <p>
@@ -120,6 +158,24 @@ permalink: /bes_complex/
   </ts-track>
   <ts-track title="PEVD proposed">
       <ts-source src="../assets/se_PEVD_da/audio/speech-shaped_0_pevd.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  
+  <div id="10dB" class="tabcontent" style="display:block">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = 10 dB.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+  <ts-track title="Noisy">
+      <ts-source src="../assets/bse_dcctn/WGN_N_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Enhanced">
+      <ts-source src="../assets/bse_dcctn/WGN_E_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Clean">
+      <ts-source src="../assets/bse_dcctn/WGN_C_01.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
 </div>
