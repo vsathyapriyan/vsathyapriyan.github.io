@@ -183,17 +183,51 @@ permalink: /bes_complex/
 
 <br>
 
-<h1>Reverberant recordings (T60=400 ms) </h1>
+<h1>Isotropic White Gaussian Noise </h1>
 <div class="tab" style="min-width: 600px">
-  <button class="tablinks2 active" onclick="openTab2(event, 'Whitereverb')">White</button>
-  <button class="tablinks2" onclick="openTab2(event, 'Babblereverb')">Babble</button>
-  <button class="tablinks2" onclick="openTab2(event, 'Speech-shaped noisereverb')">Speech-shaped noise</button>
+  <button class="tablinks2 active" onclick="openTab2(event, 'neg10dB_WGN')">-10 dB</button>
+  <button class="tablinks2" onclick="openTab2(event, 'neg5dB_WGN')">-5 dB</button>
+  <button class="tablinks2" onclick="openTab2(event, '0dB_WGN')">0 dB</button>
+   <button class="tablinks2 active" onclick="openTab2(event, '5dB_WGN')">5 dB</button>
+  <button class="tablinks2" onclick="openTab2(event, '10dB_WGN')">10 dB</button>
 </div>
 
-<div id="Whitereverb" class="tabcontent2" style="display:block">
+<div id="neg10dB_WGN" class="tabcontent2" style="display:block">
   <div class="player">
   <p>
-      Diffuse white Gaussian noise at 0 dB SNR.
+      Hearing aids are at an SNR = -10 dB.
+  </p>
+  <!-- <img src="raw.png" class="seekable"> -->
+  <ts-track title="Raw (best)">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_raw_best.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Raw (worst)">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_raw_worst.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="DSB (best)">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_dsb_best.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="DSB (worst)" style="overflow: hidden">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_dsb_worst.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MVDR (best)">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_mvdr_best.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MVDR (worst)">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_mvdr_worst.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="PEVD full">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_pevd_full.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="PEVD proposed">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_pevd.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  <div id="neg5dB_WGN" class="tabcontent2" style="display:block">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = -5 dB.
   </p>
   <!-- <img src="raw.png" class="seekable"> -->
   <ts-track title="Raw (best)">
@@ -223,10 +257,11 @@ permalink: /bes_complex/
 </div>
 </div>
 
-<div id="Babblereverb" class="tabcontent2" style="display:none">
+
+<div id="0dB_WGN" class="tabcontent2" style="display:none">
   <div class="player">
   <p>
-      Diffuse babble noise at 0 dB SNR.
+      Hearing aids are at an SNR = 0 dB.
   </p>
   <!-- <img src="raw.png" class="seekable"> -->
   <ts-track title="Raw (best)">
@@ -255,39 +290,74 @@ permalink: /bes_complex/
   </ts-track>
 </div>
 </div>
-
-<div id="Speech-shaped noisereverb" class="tabcontent2" style="display:none">
+  
+  <div id="5dB_WGN" class="tabcontent2" style="display:block">
   <div class="player">
   <p>
-      Diffuse speech-shaped noise at 0 dB SNR.
+      Hearing aids are at an SNR = 5 dB.
   </p>
-  <!-- <img src="mix.png" class="seekable"> -->
+  <!-- <img src="raw.png" class="seekable"> -->
   <ts-track title="Raw (best)">
-      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_speech-shaped_0_raw_best.wav" type="audio/wav"></ts-source>
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_raw_best.wav" type="audio/wav"></ts-source>
   </ts-track>
   <ts-track title="Raw (worst)">
-      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_speech-shaped_0_raw_worst.wav" type="audio/wav"></ts-source>
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_raw_worst.wav" type="audio/wav"></ts-source>
   </ts-track>
   <ts-track title="DSB (best)">
-      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_speech-shaped_0_dsb_best.wav" type="audio/wav"></ts-source>
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_dsb_best.wav" type="audio/wav"></ts-source>
   </ts-track>
   <ts-track title="DSB (worst)" style="overflow: hidden">
-      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_speech-shaped_0_dsb_worst.wav" type="audio/wav"></ts-source>
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_dsb_worst.wav" type="audio/wav"></ts-source>
   </ts-track>
   <ts-track title="MVDR (best)">
-      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_speech-shaped_0_mvdr_best.wav" type="audio/wav"></ts-source>
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_mvdr_best.wav" type="audio/wav"></ts-source>
   </ts-track>
   <ts-track title="MVDR (worst)">
-      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_speech-shaped_0_mvdr_worst.wav" type="audio/wav"></ts-source>
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_mvdr_worst.wav" type="audio/wav"></ts-source>
   </ts-track>
   <ts-track title="PEVD full">
-      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_speech-shaped_0_pevd_full.wav" type="audio/wav"></ts-source>
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_pevd_full.wav" type="audio/wav"></ts-source>
   </ts-track>
   <ts-track title="PEVD proposed">
-      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_speech-shaped_0_pevd.wav" type="audio/wav"></ts-source>
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_pevd.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
 </div>
+
+
+<div id="10dB_WGN" class="tabcontent2" style="display:block">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = 10 dB.
+  </p>
+  <!-- <img src="raw.png" class="seekable"> -->
+  <ts-track title="Raw (best)">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_raw_best.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Raw (worst)">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_raw_worst.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="DSB (best)">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_dsb_best.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="DSB (worst)" style="overflow: hidden">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_dsb_worst.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MVDR (best)">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_mvdr_best.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MVDR (worst)">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_mvdr_worst.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="PEVD full">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_pevd_full.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="PEVD proposed">
+      <ts-source src="../assets/se_PEVD_da/audio/reverb_400_white_0_pevd.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
 
 <br>
 
