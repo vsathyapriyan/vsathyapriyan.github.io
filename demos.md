@@ -5,7 +5,7 @@ permalink: /demos/
 ---
 
 # Demonstrations
-This page includes demos of published and current projects.
+This page include Demos of current project.
 
-### Binaural Speech Enhancement using Deep Complex Transformer Networks
-- [Demo](https://vikastokala.github.io/bse_dcctn/)
+### Speech enhacnement using binary estimator selection applied to hearing aids with a remote microphone.
+- [Demo](https://vsathyapriyan.github.io/bse_dcctn/)
