@@ -8,4 +8,4 @@ permalink: /demos/
 This page include Demos of current project.
 
 ### Speech enhacnement using binary estimator selection applied to hearing aids with a remote microphone.
-- [Demo](https://vsathyapriyan.github.io/demos/bes_complex/)
+- [Demo](https://vsathyapriyan.github.io/bes_complex/)
