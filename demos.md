@@ -11,4 +11,4 @@ This page include Demos of current project.
 - [Demo](https://vsathyapriyan.github.io/bes_complex/)
 
 ### Speech enhancement using binary estimator selection applied to hearing aids with a remote microphone.-- Listening Test Example
-- [Demo](https://vsathyapriyan.github.io/bes_complex/)
+- [Demo](https://vsathyapriyan.github.io/bes_example/)
