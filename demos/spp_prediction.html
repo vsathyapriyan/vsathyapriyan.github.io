@@ -55,7 +55,7 @@ permalink: /spp_prediction/
 <div class="post-content">
 <!-- ... -->
 
-<h2> Speech enhancement using binary estimator selection applied to hearing aids with a remote microphone</h2>
+<h2> Speech enhancement using target speech presence estimation based on a delayed remote microphone signal</h2>
 
 <p> The demos consist of monoaural left signals for different noise and SNRs, headphones are recommended for listening.
   <ul>
@@ -91,10 +91,10 @@ permalink: /spp_prediction/
   <ts-track title="Proposed Estimate - TDOA = 0 ms">
       <ts-source src="../assets/bes_complex/Prop_-10dB_0ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
       <ts-source src="../assets/bes_complex/Prop_-10dB_14ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
       <ts-source src="../assets/bes_complex/Prop_-10dB_28ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
@@ -115,10 +115,10 @@ permalink: /spp_prediction/
   <ts-track title="Proposed Estimate - TDOA = 0 ms">
       <ts-source src="../assets/bes_complex/Prop_-5dB_0ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
       <ts-source src="../assets/bes_complex/Prop_-5dB_14ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
       <ts-source src="../assets/bes_complex/Prop_-5dB_28ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
@@ -139,10 +139,10 @@ permalink: /spp_prediction/
   <ts-track title="Proposed Estimate - TDOA = 0 ms">
       <ts-source src="../assets/bes_complex/Prop_0dB_0ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
       <ts-source src="../assets/bes_complex/Prop_0dB_14ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
       <ts-source src="../assets/bes_complex/Prop_0dB_28ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
@@ -163,10 +163,10 @@ permalink: /spp_prediction/
   <ts-track title="Proposed Estimate - TDOA = 0 ms">
       <ts-source src="../assets/bes_complex/Prop_5dB_0ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
       <ts-source src="../assets/bes_complex/Prop_5dB_14ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
       <ts-source src="../assets/bes_complex/Prop_5dB_28ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
@@ -187,10 +187,10 @@ permalink: /spp_prediction/
   <ts-track title="Proposed Estimate - TDOA = 0 ms">
       <ts-source src="../assets/bes_complex/Prop_10dB_0ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
       <ts-source src="../assets/bes_complex/Prop_10dB_14ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
       <ts-source src="../assets/bes_complex/Prop_10dB_28ms_SSN.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
@@ -198,7 +198,138 @@ permalink: /spp_prediction/
 
 <br>
 
-<h1>Cafeteria Noise</h1>
+<h1>Isotropic Babble Noise</h1>
+<div class="tab" style="min-width: 600px">
+  <button class="tablinks3" onclick="openTab3(event, 'neg10dB_WGN')">-10 dB</button>
+  <button class="tablinks3" onclick="openTab3(event, 'neg5dB_WGN')">-5 dB</button>
+  <button class="tablinks3 active" onclick="openTab3(event, '0dB_WGN')">0 dB</button>
+   <button class="tablinks3" onclick="openTab3(event, '5dB_WGN')">5 dB</button>
+  <button class="tablinks3" onclick="openTab3(event, '10dB_WGN')">10 dB</button>
+</div>
+
+<div id="neg10dB_WGN" class="tabcontent3" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = -10 dB.
+  </p>
+  <!-- <img src="raw.png" class="seekable"> -->
+   <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_-10dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_-10dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_-10dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
+      <ts-source src="../assets/bes_complex/Prop_-10dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
+      <ts-source src="../assets/bes_complex/Prop_-10dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  <div id="neg5dB_WGN" class="tabcontent3" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = -5 dB.
+  </p>
+  <!-- <img src="raw.png" class="seekable"> -->
+  <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_-5dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_-5dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_-5dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
+      <ts-source src="../assets/bes_complex/Prop_-5dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
+      <ts-source src="../assets/bes_complex/Prop_-5dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+
+<div id="0dB_WGN" class="tabcontent3" style="display:block">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = 0 dB.
+  </p>
+  <!-- <img src="raw.png" class="seekable"> -->
+   <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_0dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_0dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_0dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
+      <ts-source src="../assets/bes_complex/Prop_0dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
+      <ts-source src="../assets/bes_complex/Prop_0dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  
+  <div id="5dB_WGN" class="tabcontent3" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = 5 dB.
+  </p>
+  <!-- <img src="raw.png" class="seekable"> -->
+   <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_5dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_5dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_5dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
+      <ts-source src="../assets/bes_complex/Prop_5dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
+      <ts-source src="../assets/bes_complex/Prop_5dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+
+<div id="10dB_WGN" class="tabcontent3" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = 10 dB.
+  </p>
+ <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_10dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_10dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_10dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
+      <ts-source src="../assets/bes_complex/Prop_10dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
+      <ts-source src="../assets/bes_complex/Prop_10dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+
+<br>
+  <h1>Cafeteria Noise</h1>
 <div class="tab" style="min-width: 600px">
   <button class="tablinks2" onclick="openTab2(event, 'neg10dB_WGN')">-10 dB</button>
   <button class="tablinks2" onclick="openTab2(event, 'neg5dB_WGN')">-5 dB</button>
@@ -222,10 +353,10 @@ permalink: /spp_prediction/
   <ts-track title="Proposed Estimate - TDOA = 0 ms">
       <ts-source src="../assets/bes_complex/Prop_-10dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
       <ts-source src="../assets/bes_complex/Prop_-10dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
       <ts-source src="../assets/bes_complex/Prop_-10dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
@@ -245,10 +376,10 @@ permalink: /spp_prediction/
   <ts-track title="Proposed Estimate - TDOA = 0 ms">
       <ts-source src="../assets/bes_complex/Prop_-5dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
       <ts-source src="../assets/bes_complex/Prop_-5dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
       <ts-source src="../assets/bes_complex/Prop_-5dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
@@ -270,10 +401,10 @@ permalink: /spp_prediction/
   <ts-track title="Proposed Estimate - TDOA = 0 ms">
       <ts-source src="../assets/bes_complex/Prop_0dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
       <ts-source src="../assets/bes_complex/Prop_0dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
       <ts-source src="../assets/bes_complex/Prop_0dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
@@ -294,10 +425,10 @@ permalink: /spp_prediction/
   <ts-track title="Proposed Estimate - TDOA = 0 ms">
       <ts-source src="../assets/bes_complex/Prop_5dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
       <ts-source src="../assets/bes_complex/Prop_5dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
       <ts-source src="../assets/bes_complex/Prop_5dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
@@ -318,10 +449,10 @@ permalink: /spp_prediction/
   <ts-track title="Proposed Estimate - TDOA = 0 ms">
       <ts-source src="../assets/bes_complex/Prop_10dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+  <ts-track title="Proposed Estimate - TDOA = 20 ms">
       <ts-source src="../assets/bes_complex/Prop_10dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+  <ts-track title="Proposed Estimate - TDOA = 50 ms">
       <ts-source src="../assets/bes_complex/Prop_10dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
