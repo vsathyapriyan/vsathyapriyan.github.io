@@ -1,0 +1,386 @@
+---
+permalink: /spp_prediction/
+---
+
+
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speech enhancement using target speech presence estimation based on a delayed remote microphone signal</title>
+<meta name="generator" content="Jekyll v4.2.0">
+<meta property="og:title" content="Vasudha Sathyapriyan">
+<meta name="author" content="Vasudha Sathyapriyan">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Vasudha Sathyapriyan">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Vasudha Sathyapriyan">
+<script type="application/ld+json">
+{"url":"vsathyapriyan.github.io","headline":"Vasudha Sathyapriyan","name":"Vasudha Sathyapriyan","author":{"@type":"Person","name":"Vasudha Sathyapriyan"},"@type":"WebSite","@context":"https://schema.org"}</script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+<link rel="stylesheet" href="../css/trackswitch.min.css" />
+
+<link rel="stylesheet" href="/assets/main.css">
+<link type="application/atom+xml" rel="alternate" href="localhost:4000/se_PEVD_da/feed.xml" title="Vasudha Sathyapriyan">
+<link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png">
+
+</head>
+
+<body>
+<!--<header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="https://vsathyapriyan.github.io">Vasudha Sathyapriyan</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>-->
+
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+<div class="post-content">
+<!-- ... -->
+
+<h2> Speech enhancement using binary estimator selection applied to hearing aids with a remote microphone</h2>
+
+<p> The demos consist of monoaural left signals for different noise and SNRs, headphones are recommended for listening.
+  <ul>
+    <li> The monaural left signals are generated using measured HRIRs from the Kayser Database [3] </li>
+    <li> The speech signals are taken from the VCTK Corpus [2] </li>
+    
+  </ul>
+
+<p> This page was generated using <b> trackswitch.js </b> in [1].
+
+<h3> Isotropic Speech Shaped Noise </h3>
+<!-- <h1> Anechoic recordings </h1> -->
+<div class="tab" style="min-width: 400px">
+   <button class="tablinks" onclick="openTab(event, 'neg10dB')">-10 dB</button>
+  <button class="tablinks" onclick="openTab(event, 'neg5dB')">-5 dB</button>
+  <button class="tablinks active" onclick="openTab(event, '0dB')">0 dB</button>
+  <button class="tablinks" onclick="openTab(event, '5dB')">5 dB</button>
+  <button class="tablinks" onclick="openTab(event, '10dB')">10 dB</button>
+</div>
+  
+<div id="neg10dB" class="tabcontent" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = -10 dB.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+  <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_-10dB_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_-10dB_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_-10dB_0ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+      <ts-source src="../assets/bes_complex/Prop_-10dB_14ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+      <ts-source src="../assets/bes_complex/Prop_-10dB_28ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  
+  <div id="neg5dB" class="tabcontent" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = -5 dB.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+  <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_-5dB_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_-5dB_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_-5dB_0ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+      <ts-source src="../assets/bes_complex/Prop_-5dB_14ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+      <ts-source src="../assets/bes_complex/Prop_-5dB_28ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  
+<div id="0dB" class="tabcontent" style="display:block">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = 0 dB.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_0dB_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_0dB_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_0dB_0ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+      <ts-source src="../assets/bes_complex/Prop_0dB_14ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+      <ts-source src="../assets/bes_complex/Prop_0dB_28ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+<div id="5dB" class="tabcontent" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = 5 dB.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_5dB_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_5dB_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_5dB_0ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+      <ts-source src="../assets/bes_complex/Prop_5dB_14ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+      <ts-source src="../assets/bes_complex/Prop_5dB_28ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  
+  <div id="10dB" class="tabcontent" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = 10 dB.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+  <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_10dB_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_10dB_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_10dB_0ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+      <ts-source src="../assets/bes_complex/Prop_10dB_14ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+      <ts-source src="../assets/bes_complex/Prop_10dB_28ms_SSN.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+<br>
+
+<h1>Cafeteria Noise</h1>
+<div class="tab" style="min-width: 600px">
+  <button class="tablinks2" onclick="openTab2(event, 'neg10dB_WGN')">-10 dB</button>
+  <button class="tablinks2" onclick="openTab2(event, 'neg5dB_WGN')">-5 dB</button>
+  <button class="tablinks2 active" onclick="openTab2(event, '0dB_WGN')">0 dB</button>
+   <button class="tablinks2" onclick="openTab2(event, '5dB_WGN')">5 dB</button>
+  <button class="tablinks2" onclick="openTab2(event, '10dB_WGN')">10 dB</button>
+</div>
+
+<div id="neg10dB_WGN" class="tabcontent2" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = -10 dB.
+  </p>
+  <!-- <img src="raw.png" class="seekable"> -->
+   <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_-10dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_-10dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_-10dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+      <ts-source src="../assets/bes_complex/Prop_-10dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+      <ts-source src="../assets/bes_complex/Prop_-10dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  <div id="neg5dB_WGN" class="tabcontent2" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = -5 dB.
+  </p>
+  <!-- <img src="raw.png" class="seekable"> -->
+  <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_-5dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_-5dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_-5dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+      <ts-source src="../assets/bes_complex/Prop_-5dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+      <ts-source src="../assets/bes_complex/Prop_-5dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+
+<div id="0dB_WGN" class="tabcontent2" style="display:block">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = 0 dB.
+  </p>
+  <!-- <img src="raw.png" class="seekable"> -->
+   <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_0dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_0dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_0dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+      <ts-source src="../assets/bes_complex/Prop_0dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+      <ts-source src="../assets/bes_complex/Prop_0dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  
+  <div id="5dB_WGN" class="tabcontent2" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = 5 dB.
+  </p>
+  <!-- <img src="raw.png" class="seekable"> -->
+   <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_5dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_5dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_5dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+      <ts-source src="../assets/bes_complex/Prop_5dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+      <ts-source src="../assets/bes_complex/Prop_5dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+
+<div id="10dB_WGN" class="tabcontent2" style="display:none">
+  <div class="player">
+  <p>
+      Hearing aids are at an SNR = 10 dB.
+  </p>
+ <ts-track title="Noisy HA reference">
+      <ts-source src="../assets/bes_complex/Noisy_HA_10dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="MWF Estimate">
+      <ts-source src="../assets/bes_complex/MWF_10dB_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 0 ms">
+      <ts-source src="../assets/bes_complex/Prop_10dB_0ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 14 ms">
+      <ts-source src="../assets/bes_complex/Prop_10dB_14ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Proposed Estimate - TDOA = 28 ms">
+      <ts-source src="../assets/bes_complex/Prop_10dB_28ms_Cafe.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+
+<br>
+
+<!-- ... -->
+<br>
+
+<h1> References </h1>
+[1] Werner, Nils, et al. <strong>"trackswitch.js: A Versatile Web-Based Audio Player for Presenting Scientifc Results."</strong> 3rd web audio conference, London, UK. 2017.
+<br>
+<br>[2] H. Kayser, S. D. Ewert, J. Anemüller, T. Rohdenburg, V. Hohmann, and B. Kollmeier,<strong>“Database of Multichannel In-Ear and Behind-the-Ear Head-Related and Binaural Room Impulse Responses” </strong>,EURASIP Journal on Advances in Signal Processing, Volume 2009, 10 pages, Article ID 298605, 2009.
+<br>
+<br>[3] Yamagishi, Junichi; Veaux, Christophe; MacDonald, Kirsten. (2019). <strong>CSTR VCTK Corpus: English Multi-speaker Corpus for CSTR Voice Cloning Toolkit (version 0.92)</strong>, [sound]. University of Edinburgh. The Centre for Speech Technology Research (CSTR). https://doi.org/10.7488/ds/2645. 
+</article>
+
+</div>
+    </main>
+ <!-- <footer class="site-footer h-card">
+  <data class="u-url" href="/se_PEVD_da/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Vasudha d&#39;Sathyapriyan</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            </li><li><a class="u-email" href="mailto:vasy@demant.com">vasy@demant.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><div class="social-media-list"><a class="social-media-link" href="https://github.com/vsathyapriyan"><svg class="svg-icon"><use xlink:href="../assets/minima-social-icons.svg#github"></use></svg> <span class="username">vsathyapriyan</span></a><a class="social-media-link" href="https://www.linkedin.com/in/vasudha-sathya"><svg class="svg-icon"><use xlink:href="../assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">vasudhasathya</span></a><a class="social-media-link" href="https://orcid.org/0000-0002-7454-3222"><svg class="svg-icon"><use xlink:href="../assets/minima-social-icons.svg#orcid"></use></svg> <span class="username">ORCiD</span></a><a class="social-media-link" href="https://scholar.google.co.uk/citations?user="><svg class="svg-icon"><use xlink:href="../assets/minima-social-icons.svg#googlescholar"></use></svg> <span class="username">Vasudha Sathyapriyan</span></a></div></div>
+
+      <div class="footer-col footer-col-3">© Vasudha Sathyapriyan <script type="text/javascript">document.write( new Date().getFullYear() );</script> 
+      </div>
+    </div>
+
+  </div>
+
+</footer> -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+<script src="../css/trackswitch.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery(".player").trackSwitch({spacebar: true});
+    });
+    var settings = {
+    onlyradiosolo: true,
+    repeat: true,
+};
+$(".player").trackSwitch(settings);
+</script>
+<script type="text/javascript" src="../custom.js"></script>
+
+
+</body>
+</html>
