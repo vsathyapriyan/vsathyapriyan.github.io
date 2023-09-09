@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  This page includes audio demos of the work done during the SOUNDS project (2021-2023)
+title:  Demos
 permalink: /demos/
 ---
 
