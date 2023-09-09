@@ -4,8 +4,6 @@ title:  Demos
 permalink: /demos/
 ---
 
-# This page includes audio demos of the work done during the SOUNDS project (2021-2023)
- <hr>
 
 ### Speech enhancement using binary estimator selection applied to hearing aids with a remote microphone.
 Audio examples for the work done in [2] can be found here.
