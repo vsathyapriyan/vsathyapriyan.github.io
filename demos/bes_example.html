@@ -57,332 +57,415 @@ permalink: /bes_example/
 
 <h2> Speech enhancement using binary estimator selection applied to hearing aids with a remote microphone</h2>
 
-<p> The demos consist of monoaural left signals for different noise and SNRs, headphones are recommended for listening.
+<p> The demos consist of monaural left signals + monaural right signals for different noise and SNRs, headphones are recommended for listening.
   <ul>
-    <li> The monaural left signals are generated using measured HRIRs from the Kayser Database [3] </li>
-    <li> The speech signals are taken from the VCTK Corpus [2] </li>
+    <li> The monaural left+ right signals are generated using measured HRIRs from the Kayser Database [2] </li>
+    <li> The speech signals are taken from the Dantale II [3] </li>
     
   </ul>
 
 <p> This page was generated using <b> trackswitch.js </b> in [1].
 
 <h3> Isotropic Speech Shaped Noise </h3>
-<h4> HA SNR = 0 dB</h4>
-<h5> Signal Leakage Amplification = -7 dB </h5>
+<h4> MUSHRA Test Signals </h4>
+<p> Conditions for the MUSHRA Test.
+  <ul>
+    <li> SNRs = -5 dB, 5 dB </li>
+    <li>  TDOAs = 0 ms, 15 ms, 30 ms </li>
+     <li>  HA Processing delay = 8 ms </li>
+     <li>  Signal Leakage simulated using VER. </li>
+     <li> Output = amp_fact*processed signal + vent leakage [amp_fact = 10 dB].  </li>
+  </ul>
+
 <div class="tab" style="min-width: 400px">
-  <button class="tablinks active" onclick="openTab(event, '0ms_-7dB')">TDOA = 0 ms</button>
-  <button class="tablinks" onclick="openTab(event, '10ms_-7dB')">TDOA = 10 ms</button>
-  <button class="tablinks" onclick="openTab(event, '20ms_-7dB')">TDOA = 20 ms</button>
-  <button class="tablinks" onclick="openTab(event, '30ms_-7dB')">TDOA = 30 ms</button>
+  <button class="tablinks active" onclick="openTab(event, '-5dB,0ms')">-5 dB, 0 ms</button>
+  <button class="tablinks" onclick="openTab(event, '-5dB,15ms')">-5 dB, 15 ms</button>
+  <button class="tablinks" onclick="openTab(event, '-5dB,30ms')">-5 dB, 30 ms</button>
+  <button class="tablinks" onclick="openTab(event, '5dB,0ms')">5 dB, 0 ms</button>
+  <button class="tablinks" onclick="openTab(event, '5dB,15ms')">5 dB, 15 ms</button>
+  <button class="tablinks" onclick="openTab(event, '5dB,30ms')">5 dB, 30 ms</button>
 </div>
   
 
-<div id="0ms_-7dB" class="tabcontent" style="display:block">
+<div id='-5dB,0ms' class="tabcontent" style="display:block">
   <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 0 ms, signal leakage ampl. = -7dB.
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 0 ms.
   </p>
   <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/x_HA.wav" type="audio/wav"></ts-source>
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/y_HA/y_HA_04.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/y_HA.wav" type="audio/wav"></ts-source>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/x_HA/x_HA_04.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/a_MSTSA.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/y_RM/y_RM_04.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/y_RM_0ms.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/MWF/MWF_04.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/a_prop_0ms.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/BES_C/BES_C_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/MSTSA/MSTSA_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/BES_M/BES_M_04.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
 </div>
 
-  <div id="10ms_-7dB" class="tabcontent" style="display:none">
+  <div id='-5dB,15ms' class="tabcontent" style="display:block">
   <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 10ms, signal leakage ampl. = -7dB.
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 15 ms.
   </p>
   <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/x_HA.wav" type="audio/wav"></ts-source>
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/y_HA/y_HA_02.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/y_HA.wav" type="audio/wav"></ts-source>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/x_HA/x_HA_02.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/a_MSTSA.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/y_RM/y_RM_02.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/y_RM_10ms.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/MWF/MWF_02.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/a_prop_10ms.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/BES_C/BES_C_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/MSTSA/MSTSA_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/BES_M/BES_M_02.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
 </div>
 
-  <div id="20ms_-7dB" class="tabcontent" style="display:none">
+  <div id='-5dB,30ms' class="tabcontent" style="display:block">
   <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 20ms, signal leakage ampl. = -7dB.
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 30 ms.
   </p>
   <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/x_HA.wav" type="audio/wav"></ts-source>
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_HA/y_HA_06.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/y_HA.wav" type="audio/wav"></ts-source>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/x_HA/x_HA_06.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/a_MSTSA.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_RM/y_RM_06.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/y_RM_20ms.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MWF/MWF_06.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/a_prop_20ms.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_C/BES_C_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MSTSA/MSTSA_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_M/BES_M_06.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
 </div>
 
-  <div id="30ms_-7dB" class="tabcontent" style="display:none">
+   <div id='5dB,0ms' class="tabcontent" style="display:block">
   <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 30ms, signal leakage ampl. = -7dB.
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 0 ms.
   </p>
   <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/x_HA.wav" type="audio/wav"></ts-source>
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_HA/y_HA_01.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/y_HA.wav" type="audio/wav"></ts-source>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/x_HA/x_HA_01.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/a_MSTSA.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_RM/y_RM_01.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/y_RM_30ms.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MWF/MWF_01.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-7dB/a_prop_30ms.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_C/BES_C_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MSTSA/MSTSA_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_M/BES_M_01.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
 </div>
 
-<h5> Signal Leakage Amplification = -3 dB </h5>
+   <div id='5dB,15ms' class="tabcontent" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 15 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_HA/y_HA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/x_HA/x_HA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_RM/y_RM_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MWF/MWF_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_C/BES_C_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MSTSA/MSTSA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_M/BES_M_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  
+   <div id='5dB,30ms' class="tabcontent" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 30 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_HA/y_HA_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/x_HA/x_HA_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_RM/y_RM_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MWF/MWF_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_C/BES_C_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MSTSA/MSTSA_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_M/BES_M_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+<h4> SI Test Signals </h4>
+<p> Conditions for the SI Test.
+  <ul>
+    <li> SNRs = -5 dB, 5 dB </li>
+    <li>  TDOAs = 0 ms, 15 ms, 30 ms </li>
+     <li>  HA Processing delay = 8 ms </li>
+     <li>  Signal Leakage simulated using VER. </li>
+     <li> Output = amp_fact*processed signal + vent leakage [amp_fact = 10 dB].  </li>
+  </ul>
+
 <div class="tab" style="min-width: 400px">
-  <button class="tablinks2 active" onclick="openTab2(event, '0ms_-3dB')">TDOA = 0 ms</button>
-  <button class="tablinks2" onclick="openTab2(event, '10ms_-3dB')">TDOA = 10 ms</button>
-  <button class="tablinks2" onclick="openTab2(event, '20ms_-3dB')">TDOA = 20 ms</button>
-  <button class="tablinks2" onclick="openTab2(event, '30ms_-3dB')">TDOA = 30 ms</button>
+  <button class="tablinks2 active" onclick="openTab2(event, 'SI-5dB,0ms')">-5 dB, 0 ms</button>
+  <button class="tablinks2" onclick="openTab2(event, 'SI-5dB,15ms')">-5 dB, 15 ms</button>
+  <button class="tablinks2" onclick="openTab2(event, 'SI-5dB,30ms')">-5 dB, 30 ms</button>
+  <button class="tablinks2" onclick="openTab2(event, 'SI5dB,0ms')">5 dB, 0 ms</button>
+  <button class="tablinks2" onclick="openTab2(event, 'SI5dB,15ms')">5 dB, 15 ms</button>
+  <button class="tablinks2" onclick="openTab2(event, 'SI5dB,30ms')">5 dB, 30 ms</button>
+</div>
+
+<div id='SI-5dB,0ms' class="tabcontent2" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 0 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/y_HA/y_HA_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/x_HA/x_HA_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/y_RM/y_RM_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/MWF/MWF_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/BES_C/BES_C_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/MSTSA/MSTSA_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/BES_M/BES_M_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+  <div id='SI-5dB,15ms' class="tabcontent2" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 15 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/y_HA/y_HA_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/x_HA/x_HA_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/y_RM/y_RM_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/MWF/MWF_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/BES_C/BES_C_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/MSTSA/MSTSA_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/BES_M/BES_M_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+  <div id='SI-5dB,30ms' class="tabcontent2" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 30 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_HA/y_HA_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/x_HA/x_HA_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_RM/y_RM_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MWF/MWF_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_C/BES_C_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MSTSA/MSTSA_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_M/BES_M_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+   <div id='SI5dB,0ms' class="tabcontent2" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 0 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_HA/y_HA_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/x_HA/x_HA_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_RM/y_RM_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MWF/MWF_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_C/BES_C_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MSTSA/MSTSA_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_M/BES_M_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+   <div id='SI5dB,15ms' class="tabcontent2" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 15 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_HA/y_HA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/x_HA/x_HA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_RM/y_RM_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MWF/MWF_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_C/BES_C_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MSTSA/MSTSA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_M/BES_M_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
 </div>
   
-
-<div id="0ms_-3dB" class="tabcontent2" style="display:block">
+   <div id='SI5dB,30ms' class="tabcontent2" style="display:block">
   <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 0 ms, signal leakage ampl. = -3dB.
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 30 ms.
   </p>
   <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/x_HA.wav" type="audio/wav"></ts-source>
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_HA/y_HA_03.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/y_HA.wav" type="audio/wav"></ts-source>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/x_HA/x_HA_03.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/a_MSTSA.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/y_RM/y_RM_03.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/y_RM_0ms.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MWF/MWF_03.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/a_prop_0ms.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_C/BES_C_03.wav" type="audio/wav"></ts-source>
   </ts-track>
-</div>
-</div>
-
-  <div id="10ms_-3dB" class="tabcontent2" style="display:none">
-  <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 10ms, signal leakage ampl. = -3dB.
-  </p>
-  <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/x_HA.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/MSTSA/MSTSA_03.wav" type="audio/wav"></ts-source>
   </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/y_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/a_MSTSA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/y_RM_10ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/a_prop_10ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-</div>
-</div>
-
-  <div id="20ms_-3dB" class="tabcontent2" style="display:none">
-  <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 20ms, signal leakage ampl. = -3dB.
-  </p>
-  <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/x_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/y_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/a_MSTSA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/y_RM_20ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/a_prop_20ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-</div>
-</div>
-
-  <div id="30ms_-3dB" class="tabcontent2" style="display:none">
-  <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 30ms, signal leakage ampl. = -3dB.
-  </p>
-  <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/x_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/y_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/a_MSTSA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/y_RM_30ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB/a_prop_30ms.wav" type="audio/wav"></ts-source>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/BES_M/BES_M_03.wav" type="audio/wav"></ts-source>
   </ts-track>
 </div>
 </div>
   
-<h4> HA SNR = -10 dB </h4>
-<h5> Signal Leakage Amplification = -3 dB </h5>
-<div class="tab" style="min-width: 400px">
-  <button class="tablinks3 active" onclick="openTab3(event, '0ms_-3dB_-10dB')">TDOA = 0 ms</button>
-  <button class="tablinks3" onclick="openTab3(event, '10ms_-3dB_-10dB')">TDOA = 10 ms</button>
-  <button class="tablinks3" onclick="openTab3(event, '20ms_-3dB_-10dB')">TDOA = 20 ms</button>
-  <button class="tablinks3" onclick="openTab3(event, '30ms_-3dB_-10dB')">TDOA = 30 ms</button>
-</div>
-  
-
-<div id="0ms_-3dB_-10dB" class="tabcontent3" style="display:block">
-  <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 0 ms, signal leakage ampl. = -3dB.
-  </p>
-  <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/x_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/y_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/a_MSTSA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/y_RM_0ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/a_prop_0ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-</div>
-</div>
-
-  <div id="10ms_-3dB_-10dB" class="tabcontent3" style="display:none">
-  <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 10ms, signal leakage ampl. = -3dB.
-  </p>
-  <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/x_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/y_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/a_MSTSA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/y_RM_10ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/a_prop_10ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-</div>
-</div>
-
-  <div id="20ms_-3dB_-10dB" class="tabcontent3" style="display:none">
-  <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 20ms, signal leakage ampl. = -3dB.
-  </p>
-  <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/x_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/y_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/a_MSTSA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/y_RM_20ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/a_prop_20ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-</div>
-</div>
-
-  <div id="30ms_-3dB_-10dB" class="tabcontent3" style="display:none">
-  <div class="player">
-  <p>
-      Hearing aids are at an SNR = 0 dB, TDOA = 30ms, signal leakage ampl. = -3dB.
-  </p>
-  <!-- <img src="mix.png" class="seekable"> -->
- <ts-track title="Reference - Clean HA reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/x_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="Anchor - Noisy HA Reference">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/y_HA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="MSTSA Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/a_MSTSA.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="RM signal">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/y_RM_30ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-  <ts-track title="BES-M Estimate">
-      <ts-source src="../assets/bes_example/SL_amp_-3dB_SNR_-10dB/a_prop_30ms.wav" type="audio/wav"></ts-source>
-  </ts-track>
-</div>
-</div>
 
 <br>
 
@@ -394,7 +477,7 @@ permalink: /bes_example/
 <br>
 <br>[2] H. Kayser, S. D. Ewert, J. Anemüller, T. Rohdenburg, V. Hohmann, and B. Kollmeier,<strong>“Database of Multichannel In-Ear and Behind-the-Ear Head-Related and Binaural Room Impulse Responses” </strong>,EURASIP Journal on Advances in Signal Processing, Volume 2009, 10 pages, Article ID 298605, 2009.
 <br>
-<br>[3] Yamagishi, Junichi; Veaux, Christophe; MacDonald, Kirsten. (2019). <strong>CSTR VCTK Corpus: English Multi-speaker Corpus for CSTR Voice Cloning Toolkit (version 0.92)</strong>, [sound]. University of Edinburgh. The Centre for Speech Technology Research (CSTR). https://doi.org/10.7488/ds/2645. 
+<br>[3] K. Wagener et al.,"Design, optimization and evaluation of a Danish sentence test in noise", Int. J. Audiol., 42(1), Jan. 2003. 
 </article>
 
 </div>
