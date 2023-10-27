@@ -465,7 +465,405 @@ permalink: /bes_example/
   </ts-track>
 </div>
 </div>
+
+  <h3> Cafeteria Noise </h3>
+<h4> MUSHRA Test Signals </h4>
+<p> Conditions for the MUSHRA Test.
+  <ul>
+    <li> SNRs = -5 dB, 5 dB </li>
+    <li>  TDOAs = 0 ms, 15 ms, 30 ms </li>
+     <li>  HA Processing delay = 8 ms </li>
+     <li>  Signal Leakage simulated using VER. </li>
+     <li> Output = amp_fact*processed signal + vent leakage [amp_fact = 10 dB].  </li>
+  </ul>
+
+<div class="tab" style="min-width: 400px">
+  <button class="tablinks3 active" onclick="openTab3(event, 'Cafe-5dB,0ms')">-5 dB, 0 ms</button>
+  <button class="tablinks3" onclick="openTab3(event, 'Cafe-5dB,15ms')">-5 dB, 15 ms</button>
+  <button class="tablinks3" onclick="openTab3(event, 'Cafe-5dB,30ms')">-5 dB, 30 ms</button>
+  <button class="tablinks3" onclick="openTab3(event, 'Cafe5dB,0ms')">5 dB, 0 ms</button>
+  <button class="tablinks3" onclick="openTab3(event, 'Cafe5dB,15ms')">5 dB, 15 ms</button>
+  <button class="tablinks3" onclick="openTab3(event, 'Cafe5dB,30ms')">5 dB, 30 ms</button>
+</div>
   
+
+<div id='Cafe-5dB,0ms' class="tabcontent3" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 0 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+  <div id='Cafe-5dB,15ms' class="tabcontent3" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 15 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+
+  <div id='Cafe-5dB,30ms' class="tabcontent3" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 30 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+   <div id='Cafe5dB,0ms' class="tabcontent3" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 0 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+   <div id='Cafe5dB,15ms' class="tabcontent3" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 15 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  
+   <div id='Cafe5dB,30ms' class="tabcontent3" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 30 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+<h4> SI Test Signals </h4>
+<p> Conditions for the SI Test.
+  <ul>
+    <li> SNRs = -5 dB, 5 dB </li>
+    <li>  TDOAs = 0 ms, 15 ms, 30 ms </li>
+     <li>  HA Processing delay = 8 ms </li>
+     <li>  Signal Leakage simulated using VER. </li>
+     <li> Output = amp_fact*processed signal + vent leakage [amp_fact = 10 dB].  </li>
+  </ul>
+
+<div class="tab" style="min-width: 400px">
+  <button class="tablinks4 active" onclick="openTab4(event, 'CafeSI-5dB,0ms')">-5 dB, 0 ms</button>
+  <button class="tablinks4" onclick="openTab4(event, 'CafeSI-5dB,15ms')">-5 dB, 15 ms</button>
+  <button class="tablinks4" onclick="openTab4(event, 'CafeSI-5dB,30ms')">-5 dB, 30 ms</button>
+  <button class="tablinks4" onclick="openTab4(event, 'CafeSI5dB,0ms')">5 dB, 0 ms</button>
+  <button class="tablinks4" onclick="openTab4(event, 'CafeSI5dB,15ms')">5 dB, 15 ms</button>
+  <button class="tablinks4" onclick="openTab4(event, 'CafeSI5dB,30ms')">5 dB, 30 ms</button>
+</div>
+
+<div id='CafeSI-5dB,0ms' class="tabcontent4" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 0 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_02.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+  <div id='CafeSI-5dB,15ms' class="tabcontent4" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 15 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_05.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+
+  <div id='CafeSI-5dB,30ms' class="tabcontent4" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = -5 dB, TDOA = 30 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_03.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+   <div id='CafeSI5dB,0ms' class="tabcontent4" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 0 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_01.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+
+   <div id='CafeSI5dB,15ms' class="tabcontent4" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 15 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_04.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
+  
+   <div id='CafeSI5dB,30ms' class="tabcontent4" style="display:block">
+  <div class="player">
+      <p>
+      Conditions:  SNR = 5 dB, TDOA = 30 ms.
+  </p>
+  <!-- <img src="mix.png" class="seekable"> -->
+ <ts-track title="Reference: Clean HA reference (x<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_HA/y_HA_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="Anchor: Noisy HA Reference (y<sub>HA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/x_HA/x_HA_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 1: Noisy RM (y<sub>RM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/y_RM/y_RM_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 2: MWF Estimate (x<sub>MWF</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MWF/MWF_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 3: BESC Estimate (x<sub>BESC</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_C/BES_C_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 4: MSTSA Estimate (x<sub>MSTSA</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/MSTSA/MSTSA_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+  <ts-track title="System 5: BESM Estimate (x<sub>BESM</sub>)">
+      <ts-source src="../assets/bes_example/mushra_Audio/cafeteria/BES_M/BES_M_06.wav" type="audio/wav"></ts-source>
+  </ts-track>
+</div>
+</div>
 
 <br>
 
