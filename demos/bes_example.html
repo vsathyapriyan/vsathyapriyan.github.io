@@ -60,7 +60,15 @@ permalink: /bes_example/
 <p> The demos consist of monaural left signals + monaural right signals for different noise and SNRs, headphones are recommended for listening.
   <ul>
     <li> The monaural left+ right signals are generated using measured HRIRs from the Kayser Database [2] </li>
-    <li> The speech signals are taken from the Dantale II [3] </li>
+    <li> The speech signals are taken from the Dantale II [3] 
+    <ul>
+      <li>System 1: Noisy RM - Noisy remote microphone signals received at the HA (with a TDOA w.r.t the local HA mirophone signals.)</li>
+      <li>System 2: MWF Estimate - MWF estimate of the target signal, using only the local HA microphone sisngals at given SNR.</li>
+      <li>System 3: BESC Estimate - Proposed method, using the MWF estimate and the delayed RM signal- For complex STFT coefficients.</li>
+      <li>System 4: MSTSA Estimate - MSTSA estimate of the target signal, using only the local HA microphone sisngals at given SNR.</li>
+      <li>System 5: BESM Estimate - Proposed method, using the MSTSA estimate and the delayed RM signal- For magnitude STFT coefficients.</li>
+      </ul>
+    </li>
     
   </ul>
 
