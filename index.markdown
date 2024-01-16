@@ -4,7 +4,6 @@
 layout: home
 ---
 
-<h2> !! SITE UNDER CONSTRUCTION !! </h2> 
 <div class="center">
 
 <div class="row">
