@@ -45,9 +45,6 @@ permalink: /resume/
  <h1 style="color:#4CAE04"> Langauge Proficiency </h1>
 <hr>
 
- <h1 style="color:#4CAE04"> Publications </h1>
-<hr>
-
  <h1 style="color:#4CAE04"> Non-academic Interests </h1>
-<hr>
+<hr><p style = "text-align:justify; font-size: 16 px">Hiking<span style="color:#4CAE04"> &ensp;|&ensp; </span> Swing Dancing <span style="color:#4CAE04"> &ensp;|&ensp; </span> Singing <span style="color:#4CAE04"> &ensp;|&ensp; </span>Puzzle Solving </p>
 
