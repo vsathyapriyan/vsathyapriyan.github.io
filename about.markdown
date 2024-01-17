@@ -64,7 +64,6 @@ permalink: /resume/
 <p style = "text-align:justify;width:100%;font-size: 20px;">Runner-up at the 3-minute pitch battle at the Danish Sound Day 2023, where I condensed my research into 3 minutes and presented it to the general audience.</p>
 <h4><b><i>Community Outreach</i></b></h4>
 <p style = "text-align:justify;width:100%;font-size: 20px;">Designed an audio maze along with a team, to convey the importance of binarual cues for sound localisation and was presented to school kids at the Science is wonderful 2023, Brussels.</p>
- <!-- {% include googleDrivePlayer.html id=page.1XBA1sDSXkQRkjpFgPz2A1n-d50aRLohb/preview %} --!>
 
 <p style = "text-align:justify;width:100%;font-size: 20px;">Designed a virtual audio escape room game, along with a team, to explain the need for enhancement in hearing aids using remote microphones.</p>
 
