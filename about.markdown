@@ -7,7 +7,7 @@ permalink: /resume/
  <!--;text-decoration: underline;text-decoration-color: #4CAE04;text-decoration-thickness: 2px;text-underline-position: under;--!>
 <h3 style="color:#111111"> Education </h3> 
 
-<!-- <p style="color:#828282"> 2020 - present: <ins style="color:#000000; font-size:16px; text-decoration: none;"> PhD in Speech and Audio Processing, <i> Imperial College London.</i></ins></p> -->
+<p style="color:#828282"> 2021 - present: <ins style="color:#000000; font-size:16px; text-decoration: none;"> PhD in Speech and Audio Processing, <i> Aalborg University.</i></ins></p>
 
 <!-- <p style="color:#828282"> 2016 - 2020: <ins style="color:#000000; font-size:16px; text-decoration: none;"> MEng. Electrical and Electronic Engineering, <i> Imperial College London.</i></ins></p>
 
