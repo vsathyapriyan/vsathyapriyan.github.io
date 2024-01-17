@@ -13,13 +13,13 @@ permalink: /resume/
  <h3><b> Ph.D. in Electrical and Electronics Engineering</b></h3>
  <h4><i>Specialisation:</i> Audio and Speech Signal Processing</h4>
  <h4> <i> Aalborg University, Aalborg, Denmark</i></h4>
-<p style = "width:100%;font-size: 20px;">Working on signal processing algorithms for speech enhancement in hearing aids using remote microphones.</p>
+<p style = "text-align:justify;width:100%;font-size: 20px;">Working on signal processing algorithms for speech enhancement in hearing aids using remote microphones.</p>
 
  <h2 style="color:#828282"> 2018 - 2020 </h2>
  <h3><b> MSc. in Electrical and Electronics Engineering (cum laude)</b></h3>
   <h4><i>Specialisation:</i> Signals and Systems</h4>
  <h4> <i> Delft University of Technology, Delft, Netherlands</i></h4>
-<p style = "width:100%;font-size: 20px;">As a part of my Master's Thesis, I worked on preserving the more frequency sensitive binaural cue in a distortion-less binaural beam-former and analysed the noise reduction performance of preserving one binaural cue instead of two, in hearing aid applications.</p>
+<p style = "text-align:justify;width:100%;font-size: 20px;">As a part of my Master's Thesis, I worked on preserving the more frequency sensitive binaural cue in a distortion-less binaural beam-former and analysed the noise reduction performance of preserving one binaural cue instead of two, in hearing aid applications.</p>
 
  <h2 style="color:#828282"> 2013 - 2017 </h2>
  <h3><b> B.E. in Electrical and Electronics Engineering</b> </h3>
