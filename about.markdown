@@ -3,7 +3,7 @@ layout: page
 title: Resume
 permalink: /resume/
 ---
-<h1 style="color:#4CAE04;text-align:center">vasudhasathya@gmail.com<span style="color:#4CAE04"> &ensp;|&ensp; </span> INDIAN</h1>
+<h1 style="color:#4CAE04;text-align:center">Copenhagen, Denmark<span style="color:#4CAE04"> &ensp;|&ensp; </span> Indian<span style="color:#4CAE04"> &ensp;|&ensp; </span>+45 52696102<span style="color:#4CAE04"> &ensp;|&ensp; </span><a>vasudhasathya@gmail.com</a></h1>
 <h1 style="color:#4CAE04"> Summary </h1>
 <hr>
 <p style = "color:#828282; text-align:justify; font-size: 20px;"> I am passionate about solving challenging problems, learning new skills, and collaborating with diverse and talented teams. My goal is to contribute to research with real-world impact. I'm looking for opportunities to explore and drive innovation in consumer audio products.</p>
