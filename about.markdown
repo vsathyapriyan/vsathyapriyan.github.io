@@ -33,11 +33,18 @@ permalink: /resume/
   <h3 style="color:#828282"> July 2019 - November 2019 </h3>
  <h4><b> Graduate Research Intern</b></h4>
  <h4> <i> Bosch Security and Safety Systems, Eindhoven, Netherlands</i></h4>
+ <p style = "text-align:justify;width:100%;font-size: 20px;">I studied the beam-forming algorithms available for microphone arrays suitable for Conference systems. I proposed a suitable algorithm and tested it's preliminary performance, that helped propose a direction for improvement.</p>
 
-  <h3 style="color:#828282"> 2017 - 2018 </h3>
+  <h3 style="color:#828282">June 2017 - May 2018 </h3>
  <h4><b> Software Engineer</b></h4>
  <h4> <i> Visteon Corporation, Chennai, India</i></h4>
-
+ <ul>
+  <li><p style = "text-align:justify;font-size: 20px;">Developed software for Automotive Instrument clusters.</p></li>
+  <li><p style = "text-align:justify;font-size: 20px;">Implemented source code adhering to coding standards in Embedded Software.</p></li>
+  <li><p style = "text-align:justify;font-size: 20px;">Delivered products in an iterative, Agile software Product Development Lifecycle.</p></li>
+  <li><p style = "text-align:justify;font-size: 20px;"> Worked with different domain heads to transform and develop new requirements into design, implementation.</p></li>
+ </ul>
+ 
  <h1 style="color:#4CAE04"> Publications </h1>
 <hr>
 <ul>
