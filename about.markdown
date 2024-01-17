@@ -3,8 +3,8 @@ layout: page
 title: Resume
 permalink: /resume/
 ---
-<!--Download a detailed PDF <a style="color:#4CAE04" href="../assets/cv.pdf">here</a>. --!>
- <!--;text-decoration: underline;text-decoration-color: #4CAE04;text-decoration-thickness: 2px;text-underline-position: under;--!>
+<!-- Download a detailed PDF <a style="color:#4CAE04" href="../assets/cv.pdf">here</a>. --!>
+ <!-- ;text-decoration: underline;text-decoration-color: #4CAE04;text-decoration-thickness: 2px;text-underline-position: under; --!>
 
 <p style =  style="color:#828282";"text-align:centre";"font-size: 13px"> I am passionate about solving challenging problems, learning new skills, and collaborating with diverse and talented teams. My goal is to contribute to research with real-world impact. I'm looking for opportunities to explore and drive innovation in consumer audio products.</p>
 
