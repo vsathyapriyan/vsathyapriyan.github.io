@@ -5,7 +5,11 @@ permalink: /resume/
 ---
 <!--Download a detailed PDF <a style="color:#4CAE04" href="../assets/cv.pdf">here</a>. --!>
  <!--;text-decoration: underline;text-decoration-color: #4CAE04;text-decoration-thickness: 2px;text-underline-position: under;--!>
-<h3 style="color:#111111"> Education </h3> 
+
+<h1 style="color:#4CAE04"> Education </h1>
+<hr>
+
+<!-- <h4 style="color:#828282"> 2022 </h4> --!>
 
 <p style="color:#828282"> 2021 - present: <ins style="color:#000000; font-size:16px; text-decoration: none;"> PhD in Speech and Audio Processing, <i> Aalborg University.</i></ins></p>
 
