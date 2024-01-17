@@ -3,7 +3,7 @@ layout: page
 title: Resume
 permalink: /resume/
 ---
-<h1 style="color:#4CAE04;text-align:center">Copenhagen, Denmark<span style="color:#4CAE04"> &ensp;|&ensp; </span> Indian<span style="color:#4CAE04"> &ensp;|&ensp; </span>+45 52696102<span style="color:#4CAE04"> &ensp;|&ensp; </span><a>vasudhasathya@gmail.com</a></h1>
+<h1 style="color:#4CAE04;text-align:center">Copenhagen, Denmark<span style="color:#4CAE04"> &ensp;|&ensp; </span> Indian<span style="color:#4CAE04"> &ensp;|&ensp; </span>+45 52696102<span style="color:#4CAE04"> &ensp;|&ensp; </span><a style="color:#4CAE04">vasudhasathya@gmail.com</a></h1>
 <h1 style="color:#4CAE04"> Summary </h1>
 <hr>
 <p style = "color:#828282; text-align:justify; font-size: 20px;"> I am passionate about solving challenging problems, learning new skills, and collaborating with diverse and talented teams. My goal is to contribute to research with real-world impact. I'm looking for opportunities to explore and drive innovation in consumer audio products.</p>
@@ -63,10 +63,11 @@ permalink: /resume/
 <h4><b> <i>Research Pitch Presentation</i></b></h4>
 <p style = "text-align:justify;width:100%;font-size: 20px;">Runner-up at the 3-minute pitch battle at the Danish Sound Day 2023, where I condensed my research into 3 minutes and presented it to the general audience.</p>
 <h4><b><i>Community Outreach</i></b></h4>
-<p style = "text-align:justify;width:100%;font-size: 20px;">Designed an audio maze along with a team, to convey the importance of binarual cues for sound localisation and was presented to school kids at the Science is wonderful 2023, Brussels. Read more <a href = "https://vsathyapriyan.github.io/outreach/">here</a>.</p>
-<iframe src="https://drive.google.com/file/d/1XBA1sDSXkQRkjpFgPz2A1n-d50aRLohb/preview" width="640" height="480" allow="autoplay"></iframe>
-<p style = "text-align:justify;width:100%;font-size: 20px;">Designed a virtual audio escape room game, along with a team, to explain the need for enhancement in hearing aids using remote microphones. Read more <a href = "https://vsathyapriyan.github.io/outreach/">here</a></p>
-<iframe src="https://i.simmer.io/@SOUNDS/bets-under-beats" style="width:640px;height:480px;"></iframe>
+<ul>
+<li><p style = "text-align:justify;width:100%;font-size: 20px;">Designed an audio maze along with a team, to convey the importance of binarual cues for sound localisation and was presented to school kids at the Science is wonderful 2023, Brussels.</p></li>
+<li></li><p style = "text-align:justify;width:100%;font-size: 20px;">Designed a virtual audio escape room game, along with a team, to explain the need for enhancement in hearing aids using remote microphones.</p></li></ul>
+<p style = "text-align:justify;width:100%;font-size: 24px;">Read more <a style="color:#4CAE04" href = "https://vsathyapriyan.github.io/outreach/">here</a>.</p>
+
 
 
 
