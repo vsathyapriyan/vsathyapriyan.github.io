@@ -73,9 +73,9 @@ permalink: /resume/
 
  <h1 style="color:#4CAE04"> Langauges </h1>
 <hr>
-<p style = "width:100%;text-align:justify; font-size: 20px">English<span style="color:#4CAE04"> &ensp;|&ensp; </span> Hindi <span style="color:#4CAE04"> &ensp;|&ensp; </span> Kannada <span style="color:#4CAE04"> &ensp;|&ensp; </span>Tamil </p>
+<p style = "width:100%;text-align:center; font-size: 20px">English<span style="color:#4CAE04"> &ensp;|&ensp; </span> Hindi <span style="color:#4CAE04"> &ensp;|&ensp; </span> Kannada <span style="color:#4CAE04"> &ensp;|&ensp; </span>Tamil </p>
 
  <h1 style="color:#4CAE04"> Non-academic Interests </h1>
 <hr>
-<p style = "width:100%;text-align:justify; font-size: 20px">Hiking<span style="color:#4CAE04"> &ensp;|&ensp; </span> Swing Dancing <span style="color:#4CAE04"> &ensp;|&ensp; </span> Singing <span style="color:#4CAE04"> &ensp;|&ensp; </span>Puzzle Solving <span style="color:#4CAE04"> &ensp;|&ensp; </span>Krav Maga </p>
+<p style = "width:100%;text-align:center; font-size: 20px">Hiking<span style="color:#4CAE04"> &ensp;|&ensp; </span> Swing Dancing <span style="color:#4CAE04"> &ensp;|&ensp; </span> Singing <span style="color:#4CAE04"> &ensp;|&ensp; </span>Puzzle Solving <span style="color:#4CAE04"> &ensp;|&ensp; </span>Krav Maga </p>
 
