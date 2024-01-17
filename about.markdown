@@ -65,7 +65,7 @@ permalink: /resume/
 <h4><b><i>Community Outreach</i></b></h4>
 <ul>
 <li><p style = "text-align:justify;width:100%;font-size: 20px;">Designed an audio maze along with a team, to convey the importance of binarual cues for sound localisation and was presented to school kids at the Science is wonderful 2023, Brussels.</p></li>
-<li></li><p style = "text-align:justify;width:100%;font-size: 20px;">Designed a virtual audio escape room game, along with a team, to explain the need for enhancement in hearing aids using remote microphones.</p></li></ul>
+<li><p style = "text-align:justify;width:100%;font-size: 20px;">Designed a virtual audio escape room game, along with a team, to explain the need for enhancement in hearing aids using remote microphones.</p></li></ul>
 <p style = "text-align:justify;width:100%;font-size: 24px;">Read more <a style="color:#4CAE04" href = "https://vsathyapriyan.github.io/outreach/">here</a>.</p>
 
 
