@@ -6,29 +6,42 @@ permalink: /resume/
 <!--Download a detailed PDF <a style="color:#4CAE04" href="../assets/cv.pdf">here</a>. --!>
  <!--;text-decoration: underline;text-decoration-color: #4CAE04;text-decoration-thickness: 2px;text-underline-position: under;--!>
 
+<p>{text-align:centre;} Hello<\p>
+
 <h1 style="color:#4CAE04"> Education </h1>
 <hr>
 
-<!-- <h4 style="color:#828282"> 2022 </h4> --!>
+ <h2 style="color:#828282"> 2021 - Present </h2>
+ <h3 style="color:#828282"> Ph.D. in Electrical and Electronics Engineering</h3>
+  <h3<i>Specialisation:</i> Audio and Speech Signal Processing</h3>
+ <h4 style="color:#828282"> <i> Aalborg University</i></h4>
+<p>Working on signal processing algorithms for speech enhancement in hearing aids using remote microphones.</p>
 
-<p style="color:#828282"> 2021 - present: <ins style="color:#000000; font-size:16px; text-decoration: none;"> PhD in Speech and Audio Processing, <i> Aalborg University.</i></ins></p>
+ <h2 style="color:#828282"> 2018 - 2020 </h2>
+ <h3 style="color:#828282"> MSc. in Electrical and Electronics Engineering (cum laude)</h3>
+ <h3<i>Specialisation:</i> Signals and Systems</h3>
+ <h4 style="color:#828282"> <i> Delft University of Technology</i></h4>
+<p>As a part of my Master's Thesis, I worked on preserving the more frequency sensitive binaural cue in a distortion-less binaural beam-former and analysed the noise reduction performance of preserving one binaural cue instead of two, in hearing aid applications.</p>
 
-<!-- <p style="color:#828282"> 2016 - 2020: <ins style="color:#000000; font-size:16px; text-decoration: none;"> MEng. Electrical and Electronic Engineering, <i> Imperial College London.</i></ins></p>
+ <h2 style="color:#828282"> 2013 - 2017 </h2>
+ <h3 style="color:#828282"> B.E. in Electrical and Electronics Engineering </h3>
+ <h4 style="color:#828282"> <i> SSN College of Engineering</i></h4>
 
-<p style="color:#828282"> 2010 - 2016: <ins style="color:#000000; font-size:16px; text-decoration: none;"> Certificat d'Enseignement Secondaire Supérieur (A-levels equiv.), <i> Athénée Royal Charles Rogier, Liège, Belgium</i></ins></p> -->
+ <h1 style="color:#4CAE04"> Experience </h1>
+<hr>
 
-<!-- <h3 style="color:#111111"> Experience </h3>
-<p style="color:#828282"> 2022: <ins style="color:#000000; font-size:16px; text-decoration: none;"> Research Scientist Intern, <i> Nuance Communications</i></ins></p>
-<p style="color:#828282"> 2021 - present: <ins style="color:#000000; font-size:16px; text-decoration: none;"> Vice-Chair, Treasurer, <i> IEEE Student Branch, Imperial College London</i></ins></p>
-<p style="color:#828282"> 2021 - present: <ins style="color:#000000; font-size:16px; text-decoration: none;"> Student Representative, <i> CSP Research Group, Imperial College London</i></ins></p>
-<p style="color:#828282"> 2019 - present: <ins style="color:#000000; font-size:16px; text-decoration: none;"> Teaching Assistant, <i> EEE department, Imperial College London</i></ins></p>
-<p style="color:#828282"> 2019: <ins style="color:#000000; font-size:16px; text-decoration: none;"> Research Intern, <i>Speech and Audio Processing Lab, Imperial College London</i></ins></p> -->
+ <h1 style="color:#4CAE04"> Publications </h1>
+<hr>
 
-<!-- <h3 style="color:#111111"> Publications </h3>
-<p style="color:#828282"> 2021: <ins style="color:#000000; font-size:16px; text-decoration: none;"> E. d'Olne, A. H. Moore, and P. A. Naylor, "Model-based beamforming for wearable microphone arrays", in <i>Proc.  Eur.  Signal  Process.  Conf. (EUSIPCO)</i>, Dublin, Ireland, 2021.</ins></p> -->
+ <h1 style="color:#4CAE04"> Achievements </h1>
+<hr>
 
-<!-- 
-<h3 style="color:#111111"> Achievements </h3>
-<p style="color:#828282"> 2020: <ins style="color:#000000; font-size:16px; text-decoration: none;"> Institute of Engineering and Technology (IET) Prize, <i>Imperial College London</i></ins></p>
+ <h1 style="color:#4CAE04"> Langauge Proficiency </h1>
+<hr>
 
-<p style="color:#828282"> 2018, 2019, 2020: <ins style="color:#000000; font-size:16px; text-decoration: none;"> Dean's List for Academic Excellence, <i>Imperial College London</i></ins></p> -->
+ <h1 style="color:#4CAE04"> Publications </h1>
+<hr>
+
+ <h1 style="color:#4CAE04"> Non-academic Interests </h1>
+<hr>
+
