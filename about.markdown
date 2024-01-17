@@ -39,8 +39,18 @@ permalink: /resume/
 
  </ul>
  
- <h1 style="color:#4CAE04"> Achievements </h1>
+ <h1 style="color:#4CAE04"> Research Communication </h1>
 <hr>
+<h4> <i>Poster Presentation</i></h4>
+<p style = "text-align:justify;width:100%;font-size: 20px;">Presented a poster at the Speech in Noise 2024 Conference and communicated my research...</p>
+<h4> <i>Research Pitch Battle Presentation</i></h4>
+<p style = "text-align:justify;width:100%;font-size: 20px;">Presented a 3- minute pitch at the Danish Sound Day 2023, where I condensed my research into 3 minutes and presented it an audience with a different scientific background.</p>
+<h4> <i>Community Outreach</i></h4>
+<p style = "text-align:justify;width:100%;font-size: 20px;">Designed an audio maze along with a team, to convey the importance of binarual cues for sound localisation and was presented to school kids at the Science is wonderful 2023, Bruseels.</p>
+<p style = "text-align:justify;width:100%;font-size: 20px;">Designed a virtual audio escape room game, along with a team, to explain the need for enhancement in hearing aids using remote microphones.</p>
+
+
+
 
  <h1 style="color:#4CAE04"> Langauges </h1>
 <hr>
