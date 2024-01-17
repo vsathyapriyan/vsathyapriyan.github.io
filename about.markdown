@@ -4,7 +4,7 @@ title: Resume
 permalink: /resume/
 ---
 
-<p style =  style="color:#828282";"text-align:centre";"font-size: 13px"> I am passionate about solving challenging problems, learning new skills, and collaborating with diverse and talented teams. My goal is to contribute to research with real-world impact. I'm looking for opportunities to explore and drive innovation in consumer audio products.</p>
+<p style = "color:#828282;text-align:centre;font-size: 30px"> I am passionate about solving challenging problems, learning new skills, and collaborating with diverse and talented teams. My goal is to contribute to research with real-world impact. I'm looking for opportunities to explore and drive innovation in consumer audio products.</p>
 
 <h1 style="color:#4CAE04"> Education </h1>
 <hr>
@@ -21,7 +21,7 @@ permalink: /resume/
  <h4> <i> Delft University of Technology</i></h4>
 <p>As a part of my Master's Thesis, I worked on preserving the more frequency sensitive binaural cue in a distortion-less binaural beam-former and analysed the noise reduction performance of preserving one binaural cue instead of two, in hearing aid applications.</p>
 
- <h2> 2013 - 2017 </h2>
+ <h2 style="color:#828282"> 2013 - 2017 </h2>
  <h3> B.E. in Electrical and Electronics Engineering </h3>
  <h4> <i> SSN College of Engineering</i></h4>
 
