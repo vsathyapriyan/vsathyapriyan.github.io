@@ -9,8 +9,8 @@ permalink: /resume/
 <h1 style="color:#4CAE04"> Education </h1>
 <hr>
 
- <h2 style="color:#828282"> 2021 - Present </h2>
- <h3><b> Ph.D. in Electrical and Electronics Engineering</b></h3>
+ <h3 style="color:#828282"> 2021 - Present </h3>
+ <h4><b> Ph.D. in Electrical and Electronics Engineering</b></h4>
  <h4><i>Specialisation:</i> Audio and Speech Signal Processing</h4>
  <h4> <i> Aalborg University, Aalborg, Denmark</i></h4>
 <p style = "text-align:justify;width:100%;font-size: 20px;">Working on signal processing algorithms for speech enhancement in hearing aids using remote microphones.</p>
@@ -43,10 +43,10 @@ permalink: /resume/
 <hr>
 <h4><b> <i>Poster Presentation</i></b></h4>
 <p style = "text-align:justify;width:100%;font-size: 20px;">Presented a poster at the Speech in Noise 2024 Conference and communicated my research...</p>
-<h4><b> <i>Research Pitch Battle Presentation</i></b></h4>
+<h4><b> <i>Research Pitch Presentation</i></b></h4>
 <p style = "text-align:justify;width:100%;font-size: 20px;">Runner-up at the 3-minute pitch battle at the Danish Sound Day 2023, where I condensed my research into 3 minutes and presented it to the general audience.</p>
 <h4><b><i>Community Outreach</i></b></h4>
-<p style = "text-align:justify;width:100%;font-size: 20px;">Designed an audio maze along with a team, to convey the importance of binarual cues for sound localisation and was presented to school kids at the Science is wonderful 2023, Bruseels.</p>
+<p style = "text-align:justify;width:100%;font-size: 20px;">Designed an audio maze along with a team, to convey the importance of binarual cues for sound localisation and was presented to school kids at the Science is wonderful 2023, Brussels.</p>
 <p style = "text-align:justify;width:100%;font-size: 20px;">Designed a virtual audio escape room game, along with a team, to explain the need for enhancement in hearing aids using remote microphones.</p>
 
 
