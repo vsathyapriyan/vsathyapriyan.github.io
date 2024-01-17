@@ -4,7 +4,7 @@ title: Resume
 permalink: /resume/
 ---
 
-<p style = "color:#4CAE04; text-align:centre; font-size: 20px;"> I am passionate about solving challenging problems, learning new skills, and collaborating with diverse and talented teams. My goal is to contribute to research with real-world impact. I'm looking for opportunities to explore and drive innovation in consumer audio products.</p>
+<p style = "color:#4CAE04; text-align:justify; font-size: 20px;"> I am passionate about solving challenging problems, learning new skills, and collaborating with diverse and talented teams. My goal is to contribute to research with real-world impact. I'm looking for opportunities to explore and drive innovation in consumer audio products.</p>
 
 <h1 style="color:#4CAE04"> Education </h1>
 <hr>
