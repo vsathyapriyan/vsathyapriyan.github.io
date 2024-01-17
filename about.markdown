@@ -63,9 +63,10 @@ permalink: /resume/
 <h4><b> <i>Research Pitch Presentation</i></b></h4>
 <p style = "text-align:justify;width:100%;font-size: 20px;">Runner-up at the 3-minute pitch battle at the Danish Sound Day 2023, where I condensed my research into 3 minutes and presented it to the general audience.</p>
 <h4><b><i>Community Outreach</i></b></h4>
-<p style = "text-align:justify;width:100%;font-size: 20px;">Designed an audio maze along with a team, to convey the importance of binarual cues for sound localisation and was presented to school kids at the Science is wonderful 2023, Brussels. Read more <a> href = "https://vsathyapriyan.github.io/outreach/"</a>.</p>
+<p style = "text-align:justify;width:100%;font-size: 20px;">Designed an audio maze along with a team, to convey the importance of binarual cues for sound localisation and was presented to school kids at the Science is wonderful 2023, Brussels. Read more <a href = "https://vsathyapriyan.github.io/outreach/">here</a>.</p>
 <iframe src="https://drive.google.com/file/d/1XBA1sDSXkQRkjpFgPz2A1n-d50aRLohb/preview" width="640" height="480" allow="autoplay"></iframe>
-<p style = "text-align:justify;width:100%;font-size: 20px;">Designed a virtual audio escape room game, along with a team, to explain the need for enhancement in hearing aids using remote microphones.</p>
+<p style = "text-align:justify;width:100%;font-size: 20px;">Designed a virtual audio escape room game, along with a team, to explain the need for enhancement in hearing aids using remote microphones. Read more <a href = "https://vsathyapriyan.github.io/outreach/">here</a></p>
+<iframe src="https://i.simmer.io/@SOUNDS/bets-under-beats" style="width:640px;height:480px;"></iframe>
 
 
 
