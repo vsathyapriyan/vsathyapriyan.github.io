@@ -9,32 +9,32 @@ permalink: /resume/
 <h1 style="color:#4CAE04"> Education </h1>
 <hr>
 
- <h3 style="color:#828282"> 2021 - Present </h3>
+ <h3 style="color:#828282"> June 2021 - Present </h3>
  <h4><b> Ph.D. in Electrical and Electronics Engineering</b> - <i>Specialisation:</i> Audio and Speech Signal Processing</h4>
  <h4> <i> Aalborg University, Aalborg, Denmark</i></h4>
 <p style = "text-align:justify;width:100%;font-size: 20px;">Working on signal processing algorithms for speech enhancement in hearing aids using remote microphones.</p>
 
- <h2 style="color:#828282"> 2018 - 2020 </h2>
+ <h3 style="color:#828282"> September 2018 - August 2020 </h3>
  <h4><b> MSc. in Electrical and Electronics Engineering (cum laude)</b> - <i>Specialisation:</i> Signals and Systems</h4>
  <h4> <i> Delft University of Technology, Delft, Netherlands</i></h4>
 <p style = "text-align:justify;width:100%;font-size: 20px;">As a part of my Master's Thesis, I worked on preserving the more frequency sensitive binaural cue in a distortion-less binaural beam-former and analysed the noise reduction performance of preserving one binaural cue instead of two, in hearing aid applications.</p>
 
- <h2 style="color:#828282"> 2013 - 2017 </h2>
+ <h3 style="color:#828282"> June 2013 - May 2017 </h3>
  <h4><b> B.E. in Electrical and Electronics Engineering</b> </h4>
  <h4> <i> SSN College of Engineering, Chennai, India</i></h4>
 
  <h1 style="color:#4CAE04"> Experience </h1>
 <hr>
 
- <h2 style="color:#828282"> October 2022 - February 2023 </h2>
+ <h3 style="color:#828282"> October 2022 - February 2023 </h3>
  <h4><b> Visiting Ph.D. Researcher</b></h4>
  <h4> <i>Imperial College London, London, United Kingdom</i></h4>
 
-  <h2 style="color:#828282"> July 2019 - November 2019 </h2>
+  <h3 style="color:#828282"> July 2019 - November 2019 </h3>
  <h4><b> Graduate Research Intern</b></h4>
  <h4> <i> Bosch Security and Safety Systems, Eindhoven, Netherlands</i></h4>
 
-  <h2 style="color:#828282"> 2017 - 2018 </h2>
+  <h3 style="color:#828282"> 2017 - 2018 </h3>
  <h4><b> Software Engineer</b></h4>
  <h4> <i> Visteon Corporation, Chennai, India</i></h4>
 
