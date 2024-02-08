@@ -6,7 +6,10 @@ permalink: /resume/
 <h1 style="color:#4CAE04;text-align:center">Copenhagen, Denmark<span style="color:#4CAE04"> &ensp;|&ensp; </span> Indian<span style="color:#4CAE04"> &ensp;|&ensp; </span>+45 52696102<span style="color:#4CAE04"> &ensp;|&ensp; </span><a style="color:#4CAE04">vasudhasathya@gmail.com</a></h1>
 <h1 style="color:#4CAE04"> Summary </h1>
 <hr>
-<p style = "color:#828282; text-align:justify; font-size: 20px;"> I am passionate about solving challenging problems, learning new skills, and collaborating with diverse and talented teams. My goal is to contribute to research with real-world impact. I'm looking for opportunities to explore and drive innovation in consumer audio products.</p>
+<p style = "color:#828282; text-align:justify; font-size: 20px;"> My goal is to contribute to research with real-world impact. I am passionate about solving challenging problems, learning new skills, and collaborating with diverse and talented teams. I'm looking for opportunities to utilize my skills in signal processing.</p>
+
+<p style = "color:#828282; text-align:justify; font-size: 20px;"> Download my digital resume  <a style="color:#4CAE04" href="../assets/VSathyapriyan_CV_2024_General.pdf" type='application/pdf'> here</a>.</p>
+
 
 <h1 style="color:#4CAE04"> Education </h1>
 <hr>
